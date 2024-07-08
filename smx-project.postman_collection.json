@@ -7,6 +7,97 @@
 	},
 	"item": [
 		{
+			"name": "prod",
+			"item": [
+				{
+					"name": "welcome",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://smx-proj.onrender.com/",
+							"protocol": "https",
+							"host": [
+								"smx-proj",
+								"onrender",
+								"com"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "smx-api",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "testuser",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "testpassword",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ResStatus\":\"Reserved\",\r\n    \"HotelCode\":\"TEST1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://smx-proj.onrender.com/api/reservation",
+							"protocol": "https",
+							"host": [
+								"smx-proj",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"reservation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "restypes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://smx-proj.onrender.com/api/responseTypes",
+							"protocol": "https",
+							"host": [
+								"smx-proj",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"responseTypes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "smx-api-anupam",
 			"request": {
 				"auth": {
